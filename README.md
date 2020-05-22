@@ -1,5 +1,5 @@
 # webScraping
-**Web Scraper** automatically scrapes  https://scholars.duke.edu/ to output academic articles and conference papers, readership statistics, and relevant information based on keyword input.
+**Web Scraper** automatically scrapes  https://scholars.duke.edu/ to output information for academic articles and conference papers, such readership statistics, and other relevant information based on inputted searched term.
 
 ## Getting Started
 
