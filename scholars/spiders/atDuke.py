@@ -106,12 +106,14 @@ class AtdukeSpider(scrapy.Spider):
                         citations = "Not Available"
                     if (stats == ' '):
                         stats = "Not Available"       
-                    if (readership == ' '):
-                        readership = "Not Available"
-                    if (tweets == ' '):
-                        tweets = "Not Available"                                        # using the response object we created before (paper_resp), continue scraping the article's main information
-                    if (news_mentions == ' '):
-                        news_mentions = "Not Available"
+                    if type(readership) is tuple:
+                        readership = readership[0]
+                    if type(tweets) is tuple:
+                        tweets = tweets[0]                                     # using the response object we created before (paper_resp), continue scraping the article's main information
+                    if type(news_mentions) is tuple:
+                        news_mentions = news_mentions[0]
+                    if news_mentions is None:
+                        news_mentions = "None"
                 # find the article's publication location as this can either be represented as plain text or hyperilnk
                 pub_loc = paper.xpath(".//*[contains(text(), 'Published In')]/following-sibling::ul/li/a/text()").get()
                 if(pub_loc is None):
@@ -120,7 +122,7 @@ class AtdukeSpider(scrapy.Spider):
                 # find and output the article's information
                 yield{
                     'title': str(paper.xpath(".//section[@id = 'individual-info']/header/h1/text()").get()),
-                    'authors': paper.xpath(".//ul[@id = 'individual-DukeAuthors']/following-sibling::ul[1]/li/text()").getall(),
+                    'authors': paper.xpath(".//ul[@id = 'individual-DukeAuthors']/following-sibling::ul[1]/li/text()").get(),
                     'published_date': paper.xpath(".//ul[@id = 'individual-PublishedDate']/li[1]/text()").get(),
                     'doi': paper.xpath(".//h3[contains(text(),'Digital Object Identifier (DOI)')]/following-sibling::ul[1]/li/text()").get(),
                     'abstract': paper.xpath(".//div[@class = 'abstract']/p/text()").get(),
@@ -128,8 +130,8 @@ class AtdukeSpider(scrapy.Spider):
                     'link': paper.xpath(".//h3[contains(text(), 'Full Text')]/following-sibling::ul[1]/li[1]/a/@href").get(),
                     'citations': citations,
                     'readership': readership,
-                    'tweets': tweets,
-                    'news_mentions': news_mentions
+                    'tweets': (tweets).replace("\n", ""),
+                    'news_mentions': (news_mentions).replace("\n", "")
                 }
                 
                 # close the new tab we created and switch to the main tab that has the set of articles.

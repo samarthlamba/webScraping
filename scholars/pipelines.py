@@ -14,7 +14,9 @@ class SQLlitePipeline(object):
         try:
             self.c.execute('''
                 CREATE TABLE paper(
-                    title TEXT
+                    title TEXT,
+                    authors TEXT,
+                    doi TEXT
                 )
             ''')
                         # citations BLOB,
@@ -30,10 +32,16 @@ class SQLlitePipeline(object):
 
 
     def process_item(self, item, spider):
+        print("Types_all")
+        print(type(item.get('title')))
+        print(type(item.get('authors')))
+        print(type(item.get('doi')))
         self.c.execute('''
-        INSERT INTO paper (title) VALUES(?)
+        INSERT INTO paper (title, authors, doi) VALUES(?, ?, ?)
         ''', (
             item.get('title'),
+            item.get('authors'),
+            item.get('doi'),
         ))
         self.connection.commit()
         logging.warning("SPIDER PROCESSED")
