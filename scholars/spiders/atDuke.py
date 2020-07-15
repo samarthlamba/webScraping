@@ -19,7 +19,7 @@ class AtdukeSpider(scrapy.Spider):
         # Making the chrome browser headless, so that it performs the job in the background
         chrome_options = Options()
         chrome_options = webdriver.ChromeOptions()
-        #chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36]")
 
         # Creating a driver out of the chromedriver.exe file. Feeding the driver the appropriate page to start off at.
@@ -130,8 +130,8 @@ class AtdukeSpider(scrapy.Spider):
                     'link': paper.xpath(".//h3[contains(text(), 'Full Text')]/following-sibling::ul[1]/li[1]/a/@href").get(),
                     'citations': citations,
                     'readership': readership,
-                    'tweets': (tweets).replace("\n", ""),
-                    'news_mentions': (news_mentions).replace("\n", "")
+                    'tweets': (tweets),
+                    'news_mentions': (news_mentions)
                 }
                 
                 # close the new tab we created and switch to the main tab that has the set of articles.
