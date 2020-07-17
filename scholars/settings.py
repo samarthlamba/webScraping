@@ -68,7 +68,8 @@ FEED_EXPORT_ENCODING = 'utf-8'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scholars.pipelines.SQLlitePipeline': 300
+    'scholars.pipelines.SQLlitePipeline': 300,
+    'scholars.pipelines.JsonWriterPipeline': 400
  }
 
 

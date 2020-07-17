@@ -1,0 +1,698 @@
+title,authors,published_date,doi,abstract,publication_location,link,citations,readership,tweets,news_mentions
+"
+  An FPGA design framework for CNN sparsification and acceleration
+
+","    
+
+    Li, S; Wen, W; Wang, Y; Han, S; Chen, Y; Li, HH
+
+  ","    
+    June 30, 2017
+  ","    
+
+    10.1109/FCCM.2017.21
+
+  ","© 2017 IEEE. Convolutional neural networks (CNNs) have recently broken many performance records in image recognition and object detection problems. The success of CNNs, to a great extent, is enabled by the fast scaling-up of the networks that learn from a huge volume of data. The deployment of big CNN models can be both computation-intensive and memory-intensive, leaving severe challenges to hardware implementations. In recent years, sparsification techniques that prune redundant connections in the networks while still retaining the similar accuracy emerge as promising solutions to alliterate the computation overheads associated with CNNs [1].","    
+
+    Proceedings   Ieee 25th Annual International Symposium on Field Programmable Custom Computing Machines, Fccm 2017
+
+  ",http://dx.doi.org/10.1109/FCCM.2017.21, , , , 
+"
+  Routability-Driven Macro Placement with Embedded CNN-Based Prediction Model
+
+","    
+
+    Huang, YH; Xie, Z; Fang, GQ; Yu, TC; Ren, H; Fang, SY; Chen, Y; Hu, J
+
+  ","    
+    May 14, 2019
+  ","    
+
+    10.23919/DATE.2019.8715126
+
+  ","© 2019 EDAA. With the dramatic shrink of feature size and the advance of semiconductor technology nodes, numerous and complicated design rules need to be followed, and a chip design can only be taped-out after passing design rule check (DRC). The high design complexity seriously deteriorates design routability, which can be measured by the number of DRC violations after the detailed routing stage. In addition, a modern large-scaled design typically consists of many huge macros due to the wide use of intellectual properties (IPs). Empirically, the placement of these macros greatly determines routability, while there exists no effective cost metric to directly evaluate a macro placement because of the extremely high complexity and unpredictability of cell placement and routing. In this paper, we propose the first work of routability-driven macro placement with deep learning. A convolutional neural network (CNN)-based routability prediction model is proposed and embedded into a macro placer such that a good macro placement with minimized DRC violations can be derived through a simulated annealing (SA) optimization process. Experimental results show the accuracy of the predictor and the effectiveness of the macro placer.","    
+
+    Proceedings of the 2019 Design, Automation and Test in Europe Conference and Exhibition, Date 2019
+
+  ",http://dx.doi.org/10.23919/DATE.2019.8715126, , , , 
+"
+  2.5D CNN model for detecting lung disease using weak supervision
+
+","    
+
+    Geng, Y; Ren, Y; Hou, R; Han, S; Rubin, GD; Lo, JY
+
+  ","    
+    January 1, 2019
+  ","    
+
+    10.1117/12.2513631
+
+  ","© 2019 SPIE. Our goal is to develop a 2.5D CNN model to detect multiple diseases in multiple organs in CT scans. In this study we investigated detection of 4 common diseases in the lungs, which are atelectasis, edema, pneumonia and nodule. Most existing algorithms for computer-aided diagnosis (CAD) of CT use 2D models for the axial slices. Our hypothesis is that by using information from all of the three views (coronal, sagittal and axial), we may achieve a better classification result, because some diseases may be more obvious from a different view or from the combination of multi-views. Our data consisted of 1089 CT scans, which contains 288 normal cases, 224 atelectasis cases, 156 edema cases, 225 pneumonia cases and 196 nodule cases. The cases were selected from approximately 5,000 chest CTs from Duke University Health System, and case-level labels were automatically extracted by simple rule-based filtering of the unstructured text from the radiology report. Each of these 5 categories excluded the others, which indicates that cases from each category will have either only one of the four diseases or no disease. To create 2.5D volume patches, we combined together three channels representing parallel slices in each of the three intersecting, orthogonal directions, resulting in sparsely sampled cubes of 20.2 x 20.2 x 20.2 mm. For each CT scan, the volume containing the lungs was identified with thresholding, and 30 patches were randomly sampled within that volume. Then three 3-channel images in each patch representing those 3 different directions were entered into 3 independent CNN paths separately, which were finally fused by a fully connected layer. We used a 4 fold cross-validation and evaluated our results using receiver operating characteristic (ROC) area under the curve (AUC). We achieved an average AUC of 0.891 for classifying normal vs. atelectasis disease, 0.940 for edema disease, 0.869 for pneumonia disease and 0.784 for nodule disease. We also implemented a train-validation-test process for each disease to evaluate the generalization of our model and again got comparable test results, 0.818 for atelectasis, 0.963 for edema, 0.878 for pneumonia and 0.784 for nodule. Despite the limitation of the small dataset scale, we demonstrated that we developed a generalizable 2.5D CNN model for detection of multiple lung diseases.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2513631, , , , 
+"
+  Daily edge deformation prediction using an unsupervised convolutional neural network model for low dose prior contour based total variation CBCT reconstruction (PCTV-CNN).
+
+","    
+
+    Chen, Y; Yin, F-F; Jiang, Z; Ren, L
+
+  ","    
+    October 2019
+  ","    
+
+    10.1088/2057-1976/ab446b
+
+  ","Purpose: Previously we developed a PCTV method to enhance the edge sharpness for low-dose CBCT reconstruction. However, the iterative deformable registration method used for deforming edges from planning-CT to on-board CBCT is time-consuming and user-dependent. This study aims to automate and accelerate PCTV reconstruction by developing an unsupervised CNN model to bypass the conventional deformable registration. Methods: The new method uses unsupervised CNN model for deformation prediction and PCTV reconstruction. An unsupervised CNN model with a u-net structure was used to predict deformation vector fields (DVF) to generate on-board contours for PCTV reconstruction. Paired 3D image volumes of prior CT and on-board CBCT are inputs and DVF are predicted without the need of ground truths. The model was initially trained on brain MRI images, and then fine-tuned using our lung SBRT data. This method was evaluated using lung SBRT patient data. In the intra-patient study, the first n-1 day's CBCTs are used for CNN training to predict nth day edge information (n = 2, 3, 4, 5). 45 half-fan projections covering 360˚ from nth day CBCT is used for reconstruction. In the inter-patient study, the 10 patient images including CT and first day's CBCT are used for training. Results from Edge-preserving (EPTV), PCTV and PCTV-CNN are compared. Results: The cross-correlations of the predicted edge map and the ground truth were on average 0.88 for both intra-patient and inter-patient studies. PCTV-CNN achieved comparable image quality as PCTV while automating the registration process and reducing the registration time from 1-2 min to 1.4 s. Conclusion: It is feasible to use an unsupervised CNN to predict daily deformation of on-board edge information for PCTV based low-dose CBCT reconstruction. PCTV-CNN has a great potential for enhancing the edge sharpness with high efficiency for low-dose CBCT to improve the precision of on-board target localization and adaptive radiotherapy.",Biomedical Physics & Engineering Express,http://dx.doi.org/10.1088/2057-1976/ab446b,"(None,)",2,1,None
+"
+  Convolutional Neural Network (CNN) Based Three Dimensional Tumor Localization Using Single X-Ray Projection
+
+","    
+
+    Wei, R; Zhou, F; Liu, B; Bai, X; Fu, D; Li, Y; Liang, B; Wu, Q
+
+  ","    
+    January 1, 2019
+  ","    
+
+    10.1109/ACCESS.2019.2899385
+
+  ","© 2013 IEEE. Accurate localization of lung tumor in real time based on a single X-ray projection is of great interest to the tumor-tracking radiotherapy but is very challenging. In this paper, a convolutional neural network (CNN)-based tumor localization method was proposed to address this problem with the aid of principal component analysis-based motion modeling. A CNN regression model was trained before treatment to recover the ill-conditioned nonlinear mapping from the single X-ray projection to the tumor motion. Novel intensity correction and data augmentation techniques were adopted to improve the model's robustness to the scatter and noise in the X-ray projection image. During treatment, the volumetric image and tumor position could be obtained by applying the CNN model on the acquired X-ray projection. This method was validated and compared with the other state-of-the-art methods on three real patient data. It was found that the proposed method could achieve real-time tumor localization with much higher accuracy (<1 mm) and robustness.",Ieee Access,http://dx.doi.org/10.1109/ACCESS.2019.2899385, , , , 
+"
+  Real-time tumor localization with single x-ray projection at arbitrary gantry angles using a convolutional neural network (CNN).
+
+","    
+
+    Wei, R; Zhou, F; Liu, B; Bai, X; Fu, D; Liang, B; Wu, Q
+
+  ","    
+    March 19, 2020
+  ","    
+
+    10.1088/1361-6560/ab66e4
+
+  ","For tumor tracking therapy, precise knowledge of tumor position in real-time is very important. A technique using single x-ray projection based on a convolutional neural network (CNN) was recently developed which can achieve accurate tumor localization in real-time. However, this method was only validated at fixed gantry angles. In this study, an improved technique is developed to handle arbitrary gantry angles for rotational radiotherapy. To evaluate the highly complex relationship between x-ray projections at arbitrary angles and tumor motion, a special CNN was proposed. In this network, a binary region of interest (ROI) mask was applied on every extracted feature map. This avoids the overfitting problem due to gantry rotation by directing the network to neglect those irrelevant pixels whose intensity variation had nothing to do with breathing motion. In addition, an angle-dependent fully connection layer (ADFCL) was utilized to recover the mapping from extracted feature maps to tumor motion, which would vary with the gantry angles. The method was tested with images from 15 realistic patients and compared with a variant network of VGG, developed by Oxford University's Visual Geometry Group. The tumors were clearly visible on x-ray projections for five patients only. The average tumor localization error was under 1.8 mm and 1.0 mm in superior-inferior and lateral directions. For the other ten patients whose tumors were not clearly visible in the x-ray projection, a feature point localization error was computed to evaluate the proposed method, the mean value of which was no more than 1.5 mm and 1.0 mm in both directions for all patients. A tumor localization method for single x-ray projection at arbitrary angles based on a novel CNN was developed and validated in this study for real-time operation. This greatly expanded the applicability of the tumor localization framework to the rotation therapy.",Phys Med Biol,http://dx.doi.org/10.1088/1361-6560/ab66e4, , , , 
+"
+  Comparison of a Supervised and An Unsupervised CNN Learning Model for Edge Prediction in Prior Contour Based Total Variation (PCTV) CBCT Reconstruction
+
+","    
+
+    Chen, Y; Jiang, Z; Yin, F; Ren, L
+
+  ","    
+    June 1, 2019
+  ",,,Medical Physics,http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:000471277701116&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=47d3190e77e5a3a53558812f597b0b92, , , , 
+"
+  Hybrid Virtual MRI/CBCT Generation Using an Unsupervised Convolutional Neural Network (CNN) with Transfer Learning
+
+","    
+
+    Chen, Y; Yin, F; Ren, L
+
+  ","    
+    June 1, 2019
+  ",,,Medical Physics,http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:000471277700112&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=47d3190e77e5a3a53558812f597b0b92, , , , 
+"
+  Material classification using convolution neural network (CNN) for X-ray based coded aperture diffraction system
+
+","    
+
+    Brumbaugh, K; Royse, C; Gregory, C; Roe, K; Greenberg, JA; Diallo, SO
+
+  ","    
+    January 1, 2019
+  ","    
+
+    10.1117/12.2519983
+
+  ","© 2019 SPIE. Downloading of the abstract is permitted for personal use only. Transmission x-ray systems rely on the measured photon attenuation coefficients for material imaging and classification. While this approach provides high quality imaging capabilities and satisfactory object discrimination in most situations, it lacks material-specific information. For airport security, this can be a significant issue as false alarms require additional time to be resolved by human operators, which impacts bag throughput and airport operations. Orthogonal techniques such as X-ray Diffraction Tomography (XRDT) using a coded aperture provide complementary chemical/molecular signatures that can be used to identify a target material. The combination of noisy signals, variability in the XRD form factors for the same material, and the lack of a comprehensive material library limits the classification performance of the correlation based methods. Using simulated data to train a 1D Convolution Neural Network (CNN), we found relative improvements in classification accuracy compared to the correlation based approach we used previously. These improvement gains were cross-validated using the simulated data, and provided satisfactory detection results against real experimental data collected on a laboratory prototype.",Smart Structures and Materials 2005: Active Materials: Behavior and Mechanics,http://dx.doi.org/10.1117/12.2519983, , , , 
+"
+  Comparative effectiveness of convolutional neural network (CNN) and recurrent neural network (RNN) architectures for radiology text report classification.
+
+","    
+
+    Banerjee, I; Ling, Y; Chen, MC; Hasan, SA; Langlotz, CP; Moradzadeh, N; Chapman, B; Amrhein, T; Mong, D; Rubin, DL; Farri, O; Lungren, MP
+
+  ","    
+    June 2019
+  ","    
+
+    10.1016/j.artmed.2018.11.004
+
+  ","This paper explores cutting-edge deep learning methods for information extraction from medical imaging free text reports at a multi-institutional scale and compares them to the state-of-the-art domain-specific rule-based system - PEFinder and traditional machine learning methods - SVM and Adaboost. We proposed two distinct deep learning models - (i) CNN Word - Glove, and (ii) Domain phrase attention-based hierarchical recurrent neural network (DPA-HNN), for synthesizing information on pulmonary emboli (PE) from over 7370 clinical thoracic computed tomography (CT) free-text radiology reports collected from four major healthcare centers. Our proposed DPA-HNN model encodes domain-dependent phrases into an attention mechanism and represents a radiology report through a hierarchical RNN structure composed of word-level, sentence-level and document-level representations. Experimental results suggest that the performance of the deep learning models that are trained on a single institutional dataset, are better than rule-based PEFinder on our multi-institutional test sets. The best F1 score for the presence of PE in an adult patient population was 0.99 (DPA-HNN) and for a pediatrics population was 0.99 (HNN) which shows that the deep learning models being trained on adult data, demonstrated generalizability to pediatrics population with comparable accuracy. Our work suggests feasibility of broader usage of neural network models in automated classification of multi-institutional imaging text reports for a variety of applications including evaluation of imaging utilization, imaging yield, clinical decision support tools, and as part of automated classification of large corpus for medical imaging deep learning work.",Artif Intell Med,http://dx.doi.org/10.1016/j.artmed.2018.11.004,24,71,15,None
+"
+  Search for a purported resonance in 13C at 20 MeV via analyzing power measurements of 12C(n,n).
+
+","    
+
+    Tornow, W; Howell, CR; Pfützner, HG; Roberts, ML; Felsher, PD; Chen, ZM; Walter, RL
+
+  ","    
+    April 1, 1987
+  ","    
+
+    10.1103/physrevc.35.1578
+
+  ",,Physical Review C,http://dx.doi.org/10.1103/physrevc.35.1578, , , , 
+"
+  A multi-scale framework with unsupervised joint training of convolutional neural networks for pulmonary deformable image registration.
+
+","    
+
+    Jiang, Z; Yin, F-F; Ge, Y; Ren, L
+
+  ","    
+    January 13, 2020
+  ","    
+
+    10.1088/1361-6560/ab5da0
+
+  ","To achieve accurate and fast deformable image registration (DIR) for pulmonary CT, we proposed a Multi-scale DIR framework with unsupervised Joint training of Convolutional Neural Network (MJ-CNN). MJ-CNN contains three models at multi-scale levels for a coarse-to-fine DIR to avoid being trapped in a local minimum. It is trained based on image similarity and deformation vector field (DVF) smoothness, requiring no supervision of ground-truth DVF. The three models are first trained sequentially and separately for their own registration tasks, and then are trained jointly for an end-to-end optimization under the multi-scale framework. In this study, MJ-CNN was trained using public SPARE 4D-CT data. The trained MJ-CNN was then evaluated on public DIR-LAB 4D-CT dataset as well as clinical CT-to-CBCT and CBCT-to-CBCT registration. For 4D-CT inter-phase registration, MJ-CNN achieved comparable accuracy to conventional iteration optimization-based methods, and showed the smallest registration errors compared to recently published deep learning-based DIR methods, demonstrating the efficacy of the proposed multi-scale joint training scheme. Besides, MJ-CNN trained using one dataset (SPARE) could generalize to a different dataset (DIR-LAB) acquired by different scanners and imaging protocols. Furthermore, MJ-CNN trained on 4D-CTs also performed well on CT-to-CBCT and CBCT-to-CBCT registration without any re-training or fine-tuning, demonstrating MJ-CNN's robustness against applications and imaging techniques. MJ-CNN took about 1.4 s for DVF estimation and required no manual-tuning of parameters during the evaluation. MJ-CNN is able to perform accurate DIR for pulmonary CT with nearly real-time speed, making it very applicable for clinical tasks.",Phys Med Biol,http://dx.doi.org/10.1088/1361-6560/ab5da0,1,14,1,None
+"
+  Augmentation of CBCT Reconstructed From Under-Sampled Projections Using Deep Learning.
+
+","    
+
+    Jiang, Z; Chen, Y; Zhang, Y; Ge, Y; Yin, F-F; Ren, L
+
+  ","    
+    November 2019
+  ","    
+
+    10.1109/TMI.2019.2912791
+
+  ","Edges tend to be over-smoothed in total variation (TV) regularized under-sampled images. In this paper, symmetric residual convolutional neural network (SR-CNN), a deep learning based model, was proposed to enhance the sharpness of edges and detailed anatomical structures in under-sampled cone-beam computed tomography (CBCT). For training, CBCT images were reconstructed using TV-based method from limited projections simulated from the ground truth CT, and were fed into SR-CNN, which was trained to learn a restoring pattern from under-sampled images to the ground truth. For testing, under-sampled CBCT was reconstructed using TV regularization and was then augmented by SR-CNN. Performance of SR-CNN was evaluated using phantom and patient images of various disease sites acquired at different institutions both qualitatively and quantitatively using structure similarity (SSIM) and peak signal-to-noise ratio (PSNR). SR-CNN substantially enhanced image details in the TV-based CBCT across all experiments. In the patient study using real projections, SR-CNN augmented CBCT images reconstructed from as low as 120 half-fan projections to image quality comparable to the reference fully-sampled FDK reconstruction using 900 projections. In the tumor localization study, improvements in the tumor localization accuracy were made by the SR-CNN augmented images compared with the conventional FDK and TV-based images. SR-CNN demonstrated robustness against noise levels and projection number reductions and generalization for various disease sites and datasets from different institutions. Overall, the SR-CNN-based image augmentation technique was efficient and effective in considerably enhancing edges and anatomical structures in under-sampled 3D/4D-CBCT, which can be very valuable for image-guided radiotherapy.",Ieee Trans Med Imaging,http://dx.doi.org/10.1109/TMI.2019.2912791, , , , 
+"
+  Convolutional regularization methods for 4D, x-ray CT reconstruction
+
+","    
+
+    Clark, DP; Badea, CT
+
+  ","    
+    January 1, 2019
+  ","    
+
+    10.1117/12.2512816
+
+  ","© SPIE. Downloading of the abstract is permitted for personal use only. Deep learning methods have shown great promise in tackling challenging medical imaging tasks. Within the field of x-ray CT, deep learning for image denoising is of interest because of the fundamental link between ionizing radiation dose and diagnostic image quality, the limited availability of clinical projection data, and the computational expense of iterative reconstruction methods. Here, we work with 3D, temporal CT data (4D, cardiac CT), where redundancies in spatial sampling necessitate careful control of imaging dose. Specifically, using custom extensions to the Tensorflow and Keras machine learning packages, we construct and train a 4D, convolutional neural network (CNN) to denoise helical, cardiac CT data acquired in a mouse model of atherosclerosis. With the objective of accelerating iterative reconstruction, we train the CNN to map undersampled algebraic reconstructions of the 4D data to fully-sampled and regularized iterative reconstructions under mean-squared-error, perceptual loss, and low rank cost terms. Using phantom data for quantitative validation, we verify that the CNN robustly denoises static potions of the image without compromising temporal fidelity and that the CNN performs similarly to regularized, iterative reconstruction with the split Bregman method (CNN temporal RMSE: 142 HU; iterative temporal RMSE: 136 HU). Using in vivo validation and testing data excluded from CNN training, we verify that the CNN generalizes well, approximately reproducing the noise power spectrum of the iteratively reconstructed data (noise std. in water vial near heart, CNN: 62-73 HU, depending on cardiac phase; iterative: 94-100 HU), without degradation of spatial resolution (axial MTF, 10% cutoff, CNN: 2.69 lp/mm; iterative: 2.63 lp/mm). Overall, the results presented in this work represent a positive step toward realizing the promises of deep learning methods in medical imaging.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2512816, , , , 
+"
+  Student Beats the Teacher: Deep Learning Using a 3D Convolutional Neural Network (CNN) for Augmentation of CBCT Reconstructed From Under-Sampled Projections
+
+","    
+
+    Jiang, Z; Yin, F; Ren, L
+
+  ","    
+    June 1, 2019
+  ",,,Medical Physics,http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:000471277701122&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=47d3190e77e5a3a53558812f597b0b92, , , , 
+"
+  An Encoder-Decoder Based Convolutional Neural Network (ED-CNN) for PET Image Response Prediction Using Pre-RT Information: A Feasibility of Oropharynx Cancer IMRT
+
+","    
+
+    Chang, Y; Lafata, K; Liu, C; Wang, C; Cui, Y; Ren, L; Li, X; Mowery, Y; Brizel, D; Yin, F
+
+  ","    
+    June 1, 2019
+  ",,,Medical Physics,http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:000471277701348&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=47d3190e77e5a3a53558812f597b0b92, , , , 
+"
+  Measurements of Aγ(θ) for 12C(n,n)12C from En = 2.2 to 8.5 MeV
+
+","    
+
+    Roper, CD; Tornow, W; Braun, RT; Chen, Q; Crowell, A; Trotter, DG; Howell, CR; Salinas, F; Setze, R; Walter, RL; Chen, Z; Tang, H; Zhou, Z
+
+  ","    
+    2005
+  ",,,"    
+
+    Phys. Rev
+
+  ",, , , , 
+"
+  Deep Learning to Classify Radiology Free-Text Reports.
+
+","    
+
+    Chen, MC; Ball, RL; Yang, L; Moradzadeh, N; Chapman, BE; Larson, DB; Langlotz, CP; Amrhein, TJ; Lungren, MP
+
+  ","    
+    March 2018
+  ","    
+
+    10.1148/radiol.2017171115
+
+  ","Purpose To evaluate the performance of a deep learning convolutional neural network (CNN) model compared with a traditional natural language processing (NLP) model in extracting pulmonary embolism (PE) findings from thoracic computed tomography (CT) reports from two institutions. Materials and Methods Contrast material-enhanced CT examinations of the chest performed between January 1, 1998, and January 1, 2016, were selected. Annotations by two human radiologists were made for three categories: the presence, chronicity, and location of PE. Classification of performance of a CNN model with an unsupervised learning algorithm for obtaining vector representations of words was compared with the open-source application PeFinder. Sensitivity, specificity, accuracy, and F1 scores for both the CNN model and PeFinder in the internal and external validation sets were determined. Results The CNN model demonstrated an accuracy of 99% and an area under the curve value of 0.97. For internal validation report data, the CNN model had a statistically significant larger F1 score (0.938) than did PeFinder (0.867) when classifying findings as either PE positive or PE negative, but no significant difference in sensitivity, specificity, or accuracy was found. For external validation report data, no statistical difference between the performance of the CNN model and PeFinder was found. Conclusion A deep learning CNN model can classify radiology free-text reports with accuracy equivalent to or beyond that of an existing traditional NLP model. © RSNA, 2017 Online supplemental material is available for this article.",Radiology,http://dx.doi.org/10.1148/radiol.2017171115,53,122,43,None
+"
+  Analysing power for ","    
+
+    Tornow, W; Howell, CR; Pfutzner, HG; Roberts, ML; Felsher, PD; Chen, ZM; Al Ohali, M; Weisel, GJ; Walter, RL; Naqvi, AA
+
+  ","    
+    December 1, 1988
+  ","    
+
+    10.1088/0305-4616/14/1/009
+
+  ","The analysing power Ay( theta ) for 12C(n,n) 12C elastic scattering and for inelastic scattering to the first excited state (Jpi=2+, Q=-4.44 MeV) of 12C was measured at 18.2 MeV. A pulsed polarised neutron beam was produced via the 2H(d,n)3He polarisation transfer reaction. The A y data, together with published cross sections, were analysed in the framework of the spherical optical model and in the coupled-channels formalism. A phase-shift analysis at 18.2 MeV gives supporting evidence for a broad 5/2+ resonance. The 12C recoil kerma factors and values for the n+12C reaction cross section were deduced and compared with previous estimates and predictions.",Journal of Physics G: Nuclear Physics,http://dx.doi.org/10.1088/0305-4616/14/1/009, , , , 
+"
+  Butterfly-Net2: Simplified Butterfly-Net and Fourier Transform
+  Initialization
+
+","    
+
+    Xu, Z; Li, Y; Cheng, X
+
+  ",,,"Structured CNN designed using the prior information of problems potentially
+improves efficiency over conventional CNNs in various tasks in solving PDEs and
+inverse problems in signal processing. This paper introduces BNet2, a
+simplified Butterfly-Net and inline with the conventional CNN. Moreover, a
+Fourier transform initialization is proposed for both BNet2 and CNN with
+guaranteed approximation power to represent the Fourier transform operator.
+Experimentally, BNet2 and the Fourier transform initialization strategy are
+tested on various tasks, including approximating Fourier transform operator,
+end-to-end solvers of linear and nonlinear PDEs, and denoising and deblurring
+of 1D signals. On all tasks, under the same initialization, BNet2 achieves
+similar accuracy as CNN but has fewer parameters. And Fourier transform
+initialized BNet2 and CNN consistently improve the training and testing
+accuracy over the randomly initialized CNN.",,http://arxiv.org/abs/1912.04154v3, , , , 
+"
+  Calponin-3 deficiency augments contractile activity, plasticity, fibrogenic response and Yap/Taz transcriptional activation in lens epithelial cells and explants.
+
+",,"    
+    January 28, 2020
+  ","    
+
+    10.1038/s41598-020-58189-y
+
+  ","The transparent ocular lens plays a crucial role in vision by focusing light on to the retina with loss of lens transparency leading to impairment of vision. While maintenance of epithelial phenotype is recognized to be essential for lens development and function, knowledge of the identity of different molecular mechanisms regulating lens epithelial characteristics remains incomplete. This study reports that CNN-3, the acidic isoform of calponin, an actin binding contractile protein, is expressed preferentially and abundantly relative to the basic and neutral isoforms of calponin in the ocular lens, and distributes predominantly to the epithelium in both mouse and human lenses. Expression and MEKK1-mediated threonine 288 phosphorylation of CNN-3 is induced by extracellular cues including TGF-β2 and lysophosphatidic acid. Importantly, siRNA-induced deficiency of CNN3 in lens epithelial cell cultures and explants results in actin stress fiber reorganization, stimulation of focal adhesion formation, Yap activation, increases in the levels of α-smooth muscle actin, connective tissue growth factor and fibronectin, and decreases in E-cadherin expression. These results reveal that CNN3 plays a crucial role in regulating lens epithelial contractile activity and provide supporting evidence that CNN-3 deficiency is associated with the induction of epithelial plasticity, fibrogenic activity and mechanosensitive Yap/Taz transcriptional activation.",Scientific Reports,http://dx.doi.org/10.1038/s41598-020-58189-y, , , , 
+"
+  Inversion of Rough Surface Parameters from SAR Images Using Simulation-Trained Convolutional Neural Networks
+
+","    
+
+    Song, T; Kuang, L; Han, L; Wang, Y; Liu, QH
+
+  ","    
+    July 1, 2018
+  ","    
+
+    10.1109/LGRS.2018.2822821
+
+  ","© 2018 IEEE. This letter investigates the inversion of rough surface parameters (the root mean square height and the correlation length) from microwave images by using deep convolutional neural networks (CNNs). Training data for the deep CNN are simulated numerically using computational electromagnetic method. As CNN is powerful in extracting image features, scattering field from rough surfaces is first converted to microwave images via interpolated fast Fourier transform and then fed into the CNN. In order to reduce overfitting, the regularization technique and dropout layer are used. The proposed CNN consists of five pairs of convolutional and maxpooling layers and two additional convolution layers for feature extraction and two fully connected layers for parameter regression. The experimental results demonstrated the feasibility using deep neural networks for the parameter inversion of rough surface from electromagnetic scattering fields. It suggests potential application of CNN for rough surface parameter inversion from microwave sensing data.",Ieee Geoscience and Remote Sensing Letters,http://dx.doi.org/10.1109/LGRS.2018.2822821, , , , 
+"
+  Automatic segmentation of nine retinal layer boundaries in OCT images of non-exudative AMD patients using deep learning and graph search.
+
+","    
+
+    Fang, L; Cunefare, D; Wang, C; Guymer, RH; Li, S; Farsiu, S
+
+  ","    
+    May 2017
+  ","    
+
+    10.1364/boe.8.002732
+
+  ","We present a novel framework combining convolutional neural networks (CNN) and graph search methods (termed as CNN-GS) for the automatic segmentation of nine layer boundaries on retinal optical coherence tomography (OCT) images. CNN-GS first utilizes a CNN to extract features of specific retinal layer boundaries and train a corresponding classifier to delineate a pilot estimate of the eight layers. Next, a graph search method uses the probability maps created from the CNN to find the final boundaries. We validated our proposed method on 60 volumes (2915 B-scans) from 20 human eyes with non-exudative age-related macular degeneration (AMD), which attested to effectiveness of our proposed technique.",Biomedical Optics Express,http://dx.doi.org/10.1364/boe.8.002732,175,175,1,None
+"
+  Variational autoencoder for deep learning of images, labels and captions
+
+","    
+
+    Pu, Y; Gan, Z; Henao, R; Yuan, X; Li, C; Stevens, A; Carin, L
+
+  ","    
+    January 1, 2016
+  ",,"© 2016 NIPS Foundation - All Rights Reserved. A novel variational autoencoder is developed to model images, as well as associated labels or captions. The Deep Generative Deconvolutional Network (DGDN) is used as a decoder of the latent image features, and a deep Convolutional Neural Network (CNN) is used as an image encoder; the CNN is used to approximate a distribution for the latent DGDN features/code. The latent code is also linked to generative models for labels (Bayesian support vector machine) or captions (recurrent neural network). When predicting a label/caption for a new image at test, averaging is performed across the distribution of latent codes; this is computationally efficient as a consequence of the learned CNN-based encoder. Since the framework is capable of modeling the image in the presence/absence of associated labels/captions, a new semi-supervised setting is manifested for CNN learning with images; the framework even allows unsupervised CNN learning, based on images alone.",Advances in Neural Information Processing Systems,, , , , 
+"
+  Reliable training of convolutional neural networks for GPR-based buried threat detection using the Adam optimizer and batch normalization
+
+","    
+
+    Jacobson, S; Reichman, D; Bjornstad, J; Collins, LM; Malof, JM
+
+  ","    
+    January 1, 2019
+  ","    
+
+    10.1117/12.2519798
+
+  ","Copyright © 2019 SPIE. The ground penetrating radar (GPR) is a remote sensing technology that has been successfully used for detecting buried explosive threats. A large body of published research has focused on developing algorithms that automatically detect buried threats using data from GPR sensors. One promising class of algorithms for this purpose is convolutional neural networks (CNNs), however CNNs suffer from overfitting due to the limited and variable nature of GPR data. One solution to this problem is to use a validation dataset during training, however this excludes valuable labeled data from training. In this work we show that two modern techniques for training CNNs - Batch Normalization and the Adam Optimizer - substantially improve CNN performance and reduce overfitting when applied jointly. We also investigate and identify useful settings for several important CNN hyperparameters: l2 regularization, Dropout, and the learning rate schedule. We find that the improved CNN (a baseline CNN, plus all of our improvements) substantially outperforms two competing conventional detection algorithms.",Smart Structures and Materials 2005: Active Materials: Behavior and Mechanics,http://dx.doi.org/10.1117/12.2519798, , , , 
+"
+  A deep convolutional neural network and a random forest classifier for solar photovoltaic array detection in aerial imagery
+
+","    
+
+    Malof, JM; Collins, LM; Bradbury, K; Newell, RG
+
+  ","    
+    January 1, 2016
+  ","    
+
+    10.1109/ICRERA.2016.7884415
+
+  ","© 2016 IEEE. Power generation from distributed solar photovoltaic PV arrays has grown rapidly in recent years. As a result, there is interest in collecting information about the quantity, power capacity, and energy generated by such arrays; and to do so over small geo-spatial regions (e.g., counties, cities, or even smaller regions). Unfortunately, existing sources of such information are dispersed, limited in geospatial resolution, and otherwise incomplete or publically unavailable. As result, we recently proposed a new approach for collecting such distributed PV information that relies on computer algorithms to automatically detect PV arrays in high resolution aerial imagery [1], Here we build on this work by investigating two machine learning algorithms for PV array detection: a Random Forest classifier (RF) [2] and a deep convolutional neural network (CNN) [3]. We use the RF algorithm as a benchmark, or baseline, for comparison with a CNN model. The two models are developed and tested using a large collection of publicly available [4] aerial imagery, covering 135 km2, and including over 2,700 manually annotated distributed PV array locations. The results indicate that the CNN substantially improves over the RF. The CNN is capable of excellent performance, detecting nearly 80% of true panels with a precision measure of 72%.","    
+
+    2016 Ieee International Conference on Renewable Energy Research and Applications, Icrera 2016
+
+  ",http://dx.doi.org/10.1109/ICRERA.2016.7884415, , , , 
+"
+  Estimating ground-level PM2.5 using micro-satellite images by a convolutional neural network and random forest approach
+
+","    
+
+    Zheng, T; Bergin, MH; Hu, S; Miller, J; Carlson, DE
+
+  ","    
+    June 1, 2020
+  ","    
+
+    10.1016/j.atmosenv.2020.117451
+
+  ","© 2020 Elsevier Ltd PM2.5 poses a serious threat to public health, however its spatial concentrations are not well characterized due to the sparseness of regulatory air quality monitoring (AQM) stations. This motivates novel low-cost methods to estimate ground-level PM2.5 at a fine spatial resolution so that PM2.5 exposure in epidemiological research can be better quantified. Satellite-retrieved aerosol products are widely used to estimate the spatial distribution of ground-level PM2.5. However, these aerosol products can be subject to large uncertainties due to many approximations and assumptions made in multiple stages of their retrieval algorithms. Therefore, estimating ground-level PM2.5 directly from satellites (e.g. satellite images) by skipping the intermediate step of aerosol retrieval can potentially yield lower errors because it avoids retrieval error propagating into PM2.5 estimation and is desirable compared to current ground-level PM2.5 retrieval methods. Additionally, the spatial resolutions of estimated PM2.5 are usually constrained by those of the aerosol products and are currently largely at a comparatively coarse 1 km or greater resolution. Such coarse spatial resolutions are unable to support scientific studies that thrive on highly spatially-resolved PM2.5. These limitations have motivated us to devise a computer vision algorithm for estimating ground-level PM2.5 at a high spatiotemporal resolution by directly processing the global-coverage, daily, near real-time updated, 3 m/pixel resolution, three-band micro-satellite imagery of spatial coverages significantly smaller than 1 × 1 km (e.g., 200 × 200 m) available from Planet Labs. In this study, we employ a deep convolutional neural network (CNN) to process the imagery by extracting image features that characterize the day-to-day dynamic changes in the built environment and more importantly the image colors related to aerosol loading, and a random forest (RF) regressor to estimate PM2.5 based on the extracted image features along with meteorological conditions. We conducted the experiment on 35 AQM stations in Beijing over a period of ~3 years from 2017 to 2019. We trained our CNN-RF model on 10,400 available daily images of the AQM stations labeled with the corresponding ground-truth PM2.5 and evaluated the model performance on 2622 holdout images. Our model estimates ground-level PM2.5 accurately at a 200 m spatial resolution with a mean absolute error (MAE) as low as 10.1 μg m−3 (equivalent to 23.7% error) and Pearson and Spearman r scores up to 0.91 and 0.90, respectively. Our trained CNN from Beijing is then applied to Shanghai, a similar urban area. By quickly retraining only RF but not CNN on the new Shanghai imagery dataset, our model estimates Shanghai 10 AQM stations' PM2.5 accurately with a MAE and both Pearson and Spearman r scores of 7.7 μg m−3 (18.6% error) and 0.85, respectively. The finest 200 m spatial resolution of ground-level PM2.5 estimates from our model in this study is higher than the vast majority of existing state-of-the-art satellite-based PM2.5 retrieval methods. And our 200 m model's estimation performance is also at the high end of these state-of-the-art methods. Our results highlight the potential of augmenting existing spatial predictors of PM2.5 with high-resolution satellite imagery to enhance the spatial resolution of PM2.5 estimates for a wide range of applications, including pollutant emission hotspot determination, PM2.5 exposure assessment, and fusion of satellite remote sensing and low-cost air quality sensor network information.",Atmospheric Environment,http://dx.doi.org/10.1016/j.atmosenv.2020.117451,"(None,)",,1,7
+"
+  Learning context-aware convolutional filters for text processing
+
+","    
+
+    Shen, D; Min, MR; Li, Y; Carin, L
+
+  ","    
+    January 1, 2020
+  ",,"© 2018 Association for Computational Linguistics Convolutional neural networks (CNNs) have recently emerged as a popular building block for natural language processing (NLP). Despite their success, most existing CNN models employed in NLP share the same learned (and static) set of filters for all input sentences. In this paper, we consider an approach of using a small meta network to learn context-aware convolutional filters for text processing. The role of meta network is to abstract the contextual information of a sentence or document into a set of input-aware filters. We further generalize this framework to model sentence pairs, where a bidirectional filter generation mechanism is introduced to encapsulate co-dependent sentence representations. In our benchmarks on four different tasks, including ontology classification, sentiment analysis, answer sentence selection, and paraphrase identification, our proposed model, a modified CNN with context-aware filters, consistently outperforms the standard CNN and attention-based CNN baselines. By visualizing the learned context-aware filters, we further validate and rationalize the effectiveness of proposed framework.","    
+
+    Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Emnlp 2018
+
+  ",, , , , 
+"
+  Deep learning for segmentation of brain tumors: Can we train with images from different institutions?
+
+","    
+
+    Paredes, D; Saha, A; Mazurowski, MA
+
+  ","    
+    January 1, 2017
+  ","    
+
+    10.1117/12.2255696
+
+  ","© 2017 SPIE. Deep learning and convolutional neural networks (CNNs) in particular are increasingly popular tools for segmentation and classification of medical images. CNNs were shown to be successful for segmentation of brain tumors into multiple regions or labels. However, in the environment which fosters data-sharing and collection of multi-institutional datasets, a question arises: does training with data from another institution with potentially different imaging equipment, contrast protocol, and patient population impact the segmentation performance of the CNN? Our study presents preliminary data towards answering this question. Specifically, we used MRI data of glioblastoma (GBM) patients for two institutions present in The Cancer Imaging Archive. We performed a process of training and testing CNN multiple times such that half of the time the CNN was tested on data from the same institution that was used for training and half of the time it was tested on another institution, keeping the training and testing set size constant. We observed a decrease in performance as measured by Dice coefficient when the CNN was trained with data from a different institution as compared to training with data from the same institution. The changes in performance for the entire tumor and for four different labels within the tumor were: 0.72 to 0.65 (p=0.06), 0.61 to 0.58 (p=0.49), 0.54 to 0.51 (p=0.82), 0.31 to 0.24 (p<0.03), and 0.43 to 0.31(p<0.003) respectively. In summary, we found that while data across institutions can be used for development of CNNs, this might be associated with a decrease in performance.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2255696, , , , 
+"
+  Poster abstract: An efficient edge-assisted mobile system for video photorealistic style transfer
+
+","    
+
+    Li, A; Wu, C; Chen, Y; Ni, B
+
+  ","    
+    November 7, 2019
+  ","    
+
+    10.1145/3318216.3364545
+
+  ","© 2019 Copyright held by the owner/author(s). In the past decade, convolutional neural networks (CNNs) have achieved great practical success in image transformation tasks, including style transfer, semantic segmentation, etc. CNN-based style transfer, which denotes transforming an image into a desired output image according to a user-specified style image, is one of the most popular techniques in image transformation. It has led to to many successful industrial applications with significant commercial impacts, such as Prisma and DeepArt. Figure 1 shows the general workflow of the CNN-based style transfer. Given a content image and a user-specified style image, the content features and style features can be extracted using a pre-trained CNN, and then be merged to generate the stylized image. The CNN model is trained for generating a stylized image that has similar content features as the content image's and similar style features as the style image's. In this example, we can see the content image is captured at a lake in the daytime, while the style image is another similar scene captured at dusk. After performing style transfer, the content image is successfully transformed to the dusky scene while keeping the content unchanged as the content image.","    
+
+    Proceedings of the 4th Acm/Ieee Symposium on Edge Computing, Sec 2019
+
+  ",http://dx.doi.org/10.1145/3318216.3364545, , , , 
+"
+  Solidarity can help Chile prevail
+
+","    
+
+    Dorfman, A
+
+  ","    
+    2010
+  ",,,"    
+
+    Cnn.Com
+
+  ",http://ac360.blogs.cnn.com/2010/03/02/solidarity-can-help-chile-prevail/?iref=allsearch, , , , 
+"
+  Multi-energy CT decomposition using convolutional neural networks
+
+","    
+
+    Clark, DP; Holbrook, M; Badea, CT
+
+  ","    
+    January 1, 2018
+  ","    
+
+    10.1117/12.2293728
+
+  ","© 2018 SPIE. Spectral CT can provide accurate tissue composition measurements by utilizing the energy dependence of x-ray attenuation in different materials. We have introduced image reconstruction and material decomposition algorithms for multi-energy CT data acquired either with energy integrating detectors (EID) or photon counting detectors (PCD); however, material decomposition is an ill-posed problem due to the potential overlap of spectral measurements and to noise. Recently, convolutional neural networks (CNN) have generated excitement in the field of machine learning and computer vision. The goal of this work is to develop CNN-based methods for material decomposition in spectral CT. The CNN for decomposition had a U-net structure and was trained with either five-energy PCD-CT or DE-CT. As targets for training, we used simulated phantoms constructed from random combinations of water and contrast agents (iodine, barium, and calcium for five-energy PCD-CT; iodine and gold for DE EID-based CT). The experimentally measured sensitivity matrix values for iodine, barium, and calcium or iodine and gold were used to recreate the CT images corresponding to both PCD and DE-CT cases. These CT images were used to train CNNs to generate material maps at each pixel location. After training, we tested the CNNs by applying them to experimentally acquired DE-EID and PCD-based micro-CT data in mice. The predicted material maps were compared to the absolute truth in simulations and to sensitivity-based decompositions for the in vivo mouse data. The CNN-based decomposition provided higher accuracy and lower noise. In conclusion, our U-net performed a more robust spectral micro-CT decomposition because it inherently better exploits spatial and spectral correlations.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2293728, , , , 
+"
+  Why trapped miners ’unwilling to die in darkness
+
+","    
+
+    Dorfman, A
+
+  ","    
+    2010
+  ",,,"    
+
+    Cnn.Com
+
+  ",http://www.cnn.com/2010/OPINION/09/07/dorfman.chile.miners/index.html?iref=allsearch, , , , 
+"
+  Improving the histogram of oriented gradient feature for threat detection in ground penetrating radar by implementing it as a trainable convolutional neural network
+
+","    
+
+    Malof, JM; Bralich, J; Reichman, D; Collins, LM
+
+  ","    
+    January 1, 2018
+  ","    
+
+    10.1117/12.2305797
+
+  ","© 2018 SPIE. A large number of algorithms have been proposed for automatic buried threat detection (BTD) in ground penetrating radar (GPR) data. Convolutional neural networks (CNNs) have recently achieved groundbreaking results on many recognition tasks. This success is due, in part, to their ability to automatically infer effective data representations (i.e., features) using training data. This capability however results in a high capacity model (i.e., many free parameters) that is difficult to train, and more prone to overfitting, than models employing hand-crafted feature designs. This drawback is pronounced when training data is relatively scarce, as is the case with GPR BTD. In this work we propose to combine the relative advantages of hand-crafted features, and CNNs, by constructing CNN architectures that closely emulate successful hand-crafted feature designs for GPR BTD. This makes it possible to apply supervised training to traditional hand-crafted features, allowing them to adapt to the unique characteristics of the GPR BTD problem. Simultaneously, this approach yields a much lower capacity CNN model that incorporates substantial prior research knowledge, making the model much easier to train. We demonstrate the feasibility and effectiveness of this approach by designing a ""neural"" implementation of the popular histogram of oriented gradient (HOG) feature. The resulting neural HOG (NHOG) implementation is much smaller and easier to train than standard CNN architectures, and achieves superior detection performance compared to the un-trained HOG feature. In theory, neural implementations can be developed for many existing successful GPR BTD algorithms, potentially yielding similar benefits.",Smart Structures and Materials 2005: Active Materials: Behavior and Mechanics,http://dx.doi.org/10.1117/12.2305797, , , , 
+"
+  Recognizing subsurface target responses in ground penetrating radar data using convolutional neural networks
+
+","    
+
+    Sakaguchi, RT; Morton, KD; Collins, LM; Torrione, PA
+
+  ","    
+    January 1, 2015
+  ","    
+
+    10.1117/12.2177747
+
+  ","© 2015 SPIE. Improved performance in the discrimination of buried threats using Ground Penetrating Radar (GPR) data has recently been achieved using features developed for applications in computer vision. These features, designed to characterize local shape information in images, have been utilized to recognize patches that contain a target signature in two-dimensional slices of GPR data. While these adapted features perform very well in this GPR application, they were not designed to specifically differentiate between target responses and background GPR data. One option for developing a feature specifically designed for target differentiation is to manually design a feature extractor based on the physics of GPR image formation. However, as seen in the historical progression of computer vision features, this is not a trivial task. Instead, this research evaluates the use of convolutional neural networks (CNNs) applied to two-dimensional GPR data. The benefit of using a CNN is that features extracted from the data are a learned parameter of the system. This has allowed CNN implementations to achieve state of the art performance across a variety of data types, including visual images, without the need for expert designed features. However, the implementation of a CNN must be done carefully for each application as network parameters can cause performance to vary widely. This paper presents results from using CNNs for object detection in GPR data and discusses proper parameter settings and other considerations.",Smart Structures and Materials 2005: Active Materials: Behavior and Mechanics,http://dx.doi.org/10.1117/12.2177747, , , , 
+"
+  Classification of Broad Absorption Line Quasars with a Convolutional Neural Network
+
+","    
+
+    Guo, Z; Martini, P
+
+  ","    
+    July 10, 2019
+  ","    
+
+    10.3847/1538-4357/ab2590
+
+  ","© 2019. The American Astronomical Society. All rights reserved.. Quasars that exhibit blueshifted, broad absorption lines (BAL QSOs) are an important probe of black hole feedback on galaxy evolution. Yet the presence of BALs is also a complication for large spectroscopic surveys that use quasars as cosmological probes because the BAL features can affect redshift measurements and contaminate information about the matter distribution in the Lyα forest. We present a new BAL QSO catalog for quasars in the Sloan Digital Sky Survey (SDSS) Data Release 14 (DR14). As the SDSS DR14 quasar catalog has over 500,000 quasars, we have developed an automated BAL classifier with a Convolutional Neural Network (CNN). We trained our CNN classifier on the C iv λ 1549 region of a sample of quasars with reliable human classifications, and compared the results to both a dedicated test sample and visual classifications from the earlier SDSS DR12 quasar catalog. Our CNN classifier correctly classifies over 98% of the BAL quasars in the DR12 catalog, which demonstrates comparable reliability to human classification. The disagreements are generally for quasars with lower signal-to-noise ratio spectra and/or weaker BAL features. Our new catalog includes the probability that each quasar is a BAL, the strength, blueshifts and velocity widths of the troughs, and similar information for any Si iv λ 1398 BAL troughs that may be present. We find significant BAL features in 16.8% of all quasars with 1.57 <5.56 in the SDSS DR14 quasar catalog.",The Astrophysical Journal,http://dx.doi.org/10.3847/1538-4357/ab2590,1,9,1,None
+"
+  Faster cnns with direct sparse convolutions and guided pruning
+
+",,"    
+    January 1, 2019
+  ",,"© ICLR 2019 - Conference Track Proceedings. All rights reserved. Phenomenally successful in practical inference problems, convolutional neural networks (CNN) are widely deployed in mobile devices, data centers, and even supercomputers. The number of parameters needed in CNNs, however, are often large and undesirable. Consequently, various methods have been developed to prune a CNN once it is trained. Nevertheless, the resulting CNNs offer limited benefits. While pruning the fully connected layers reduces a CNN's size considerably, it does not improve inference speed noticeably as the compute heavy parts lie in convolutions. Pruning CNNs in a way that increase inference speed often imposes specific sparsity structures, thus limiting the achievable sparsity levels. We present a method to realize simultaneously size economy and speed improvement while pruning CNNs. Paramount to our success is an efficient general sparse-with-dense matrix multiplication implementation that is applicable to convolution of feature maps with kernels of arbitrary sparsity patterns. Complementing this, we developed a performance model that predicts sweet spots of sparsity levels for different layers and on different computer architectures. Together, these two allow us to demonstrate 3.1-7.3× convolution speedups over dense convolution in AlexNet, on Intel Atom, Xeon, and Xeon Phi processors, spanning the spectrum from mobile devices to supercomputers.","    
+
+    5th International Conference on Learning Representations, Iclr 2017   Conference Track Proceedings
+
+  ",, , , , 
+"
+  Adaptive feature abstraction for translating video to text
+
+","    
+
+    Pu, Y; Min, MR; Gan, Z; Carin, L
+
+  ","    
+    January 1, 2018
+  ",,"Copyright © 2018, Association for the Advancement of Artificial Intelligence (www.aaai.org). All rights reserved. Previous models for video captioning often use the output from a specific layer of a Convolutional Neural Network (CNN) as video features. However, the variable context-dependent semantics in the video may make it more appropriate to adaptively select features from the multiple CNN layers. We propose a new approach to generating adaptive spatiotemporal representations of videos for the captioning task. A novel attention mechanism is developed, which adaptively and sequentially focuses on different layers of CNN features (levels of feature “abstraction”), as well as local spatiotemporal regions of the feature maps at each layer. The proposed approach is evaluated on three benchmark datasets: YouTube2Text, M-VAD and MSR-VTT. Along with visualizing the results and how the model works, these experiments quantitatively demonstrate the effectiveness of the proposed adaptive spatiotemporal feature abstraction for translating videos to sentences with rich semantics.","    
+
+    32nd Aaai Conference on Artificial Intelligence, Aaai 2018
+
+  ",, , , , 
+"
+  ForestHash: Semantic Hashing with Shallow Random Forests and Tiny Convolutional Networks
+
+","    
+
+    Qiu, Q; Lezama, J; Bronstein, A; Sapiro, G
+
+  ","    
+    January 1, 2018
+  ","    
+
+    10.1007/978-3-030-01216-8_27
+
+  ","© 2018, Springer Nature Switzerland AG. In this paper, we introduce a random forest semantic hashing scheme that embeds tiny convolutional neural networks (CNN) into shallow random forests. A binary hash code for a data point is obtained by a set of decision trees, setting ‘1’ for the visited tree leaf, and ‘0’ for the rest. We propose to first randomly group arriving classes at each tree split node into two groups, obtaining a significantly simplified two-class classification problem that can be a handled with a light-weight CNN weak learner. Code uniqueness is achieved via the random class grouping, whilst code consistency is achieved using a low-rank loss in the CNN weak learners that encourages intra-class compactness for the two random class groups. Finally, we introduce an information-theoretic approach for aggregating codes of individual trees into a single hash code, producing a near-optimal unique hash for each class. The proposed approach significantly outperforms state-of-the-art hashing methods for image retrieval tasks on large-scale public datasets, and is comparable to image classification methods while utilizing a more compact, efficient and scalable representation. This work proposes a principled and robust procedure to train and deploy in parallel an ensemble of light-weight CNNs, instead of simply going deeper.",Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics),http://dx.doi.org/10.1007/978-3-030-01216-8_27, , , , 
+"
+  DPatch: An adversarial patch attack on object detectors
+
+","    
+
+    Liu, X; Yang, H; Liu, Z; Song, L; Li, H; Chen, Y
+
+  ","    
+    January 1, 2019
+  ",,"Copyright held by author(s). Object detectors have emerged as an indispensable module in modern computer vision systems. In this work, we propose DPATCH– a black-box adversarial-patch-based attack towards mainstream object detectors (i.e. Faster R-CNN and YOLO). Unlike the original adversarial patch that only manipulates image-level classifier, our DPATCH simultaneously attacks the bounding box regression and object classification so as to disable their predictions. Compared to prior works, DPATCH has several appealing properties: (1) DPATCH can perform both untargeted and targeted effective attacks, degrading the mAP of Faster R-CNN and YOLO from 75.10% and 65.7% down to below 1%, respectively; (2) DPATCH is small in size and its attacking effect is location-independent, making it very practical to implement real-world attacks; (3) DPATCH demonstrates great transferability among different detectors as well as training datasets. For example, DPATCH that is trained on Faster R-CNN can effectively attack YOLO, and vice versa. Extensive evaluations imply that DPATCH can perform effective attacks under black-box setup, i.e., even without the knowledge of the attacked network’s architectures and parameters. Successful realization of DPATCH also illustrates the intrinsic vulnerability of the modern detector architectures to such patch-based adversarial attacks.",Ceur Workshop Proceedings,, , , , 
+"
+  Deep learning based spectral extrapolation for dual-source, dual-energy x-ray computed tomography.
+
+","    
+
+    Clark, DP; Schwartz, FR; Marin, D; Ramirez-Giraldo, JC; Badea, CT
+
+  ","    
+    June 12, 2020
+  ","    
+
+    10.1002/mp.14324
+
+  ","PURPOSE: Data completion is commonly employed in dual-source, dual-energy computed tomography (CT) when physical or hardware constraints limit the field of view (FoV) covered by one of two imaging chains. Practically, dual-energy data completion is accomplished by estimating missing projection data based on the imaging chain with the full FoV and then by appropriately truncating the analytical reconstruction of the data with the smaller FoV. While this approach works well in many clinical applications, there are applications which would benefit from spectral contrast estimates over the larger FoV (spectral extrapolation)-e.g. model-based iterative reconstruction, contrast-enhanced abdominal imaging of large patients, interior tomography, and combined temporal and spectral imaging. METHODS: To document the fidelity of spectral extrapolation and to prototype a deep learning algorithm to perform it, we assembled a data set of 50 dual-source, dual-energy abdominal x-ray CT scans (acquired at Duke University Medical Center with 5 Siemens Flash scanners; chain A: 50 cm FoV, 100 kV; chain B: 33 cm FoV, 140 kV + Sn; helical pitch: 0.8). Data sets were reconstructed using ReconCT (v14.1, Siemens Healthineers): 768 × 768 pixels per slice, 50 cm FoV, 0.75 mm slice thickness, ""Dual-Energy - WFBP"" reconstruction mode with dual-source data completion. A hybrid architecture consisting of a learned piecewise linear transfer function (PLTF) and a convolutional neural network (CNN) was trained using 40 scans (five scans reserved for validation, five for testing). The PLTF learned to map chain A spectral contrast to chain B spectral contrast voxel-wise, performing an image domain analog of dual-source data completion with approximate spectral reweighting. The CNN with its U-net structure then learned to improve the accuracy of chain B contrast estimates by copying chain A structural information, by encoding prior chain A, chain B contrast relationships, and by generalizing feature-contrast associations. Training was supervised, using data from within the 33-cm chain B FoV to optimize and assess network performance. RESULTS: Extrapolation performance on the testing data confirmed our network's robustness and ability to generalize to unseen data from different patients, yielding maximum extrapolation errors of 26 HU following the PLTF and 7.5 HU following the CNN (averaged per target organ). Degradation of network performance when applied to a geometrically simple phantom confirmed our method's reliance on feature-contrast relationships in correctly inferring spectral contrast. Integrating our image domain spectral extrapolation network into a standard dual-source, dual-energy processing pipeline for Siemens Flash scanner data yielded spectral CT data with adequate fidelity for the generation of both 50 keV monochromatic images and material decomposition images over a 30-cm FoV for chain B when only 20 cm of chain B data were available for spectral extrapolation. CONCLUSIONS: Even with a moderate amount of training data, deep learning methods are capable of robustly inferring spectral contrast from feature-contrast relationships in spectral CT data, leading to spectral extrapolation performance well beyond what may be expected at face value. Future work reconciling spectral extrapolation results with original projection data is expected to further improve results in outlying and pathological cases.",Med Phys,http://dx.doi.org/10.1002/mp.14324,"(None,)",,8,None
+"
+  Fast spectral x-ray CT reconstruction with data-adaptive, convolutional regularization
+
+","    
+
+    Clark, DP; Badea, CT
+
+  ","    
+    January 1, 2020
+  ","    
+
+    10.1117/12.2549615
+
+  ","© 2020 SPIE Advancements in deep learning and GPU computing have exponentially driven the application of neural networks to classic medical imaging problems: denoising, segmentation, artifact removal, etc. Deep learning solutions are particularly attractive for processing multi-channel, volumetric image data, where processing and reconstruction methods are often computationally expensive. Convolutional neural networks (CNNs) are commonly applied to multi-channel image data by matching the number of network input channels to the number of data channels, learning explicit relationships between channels. This provides a high degree of specificity to a particular problem, but may fail to generalize to a broader class of closely related problems. We propose a solution to this generalization problem in the context of spectral x-ray CT, where the scanning kVps (energy bins) and contrast are often variable. Specifically, we propose a novel CNN architecture which handles variable numbers of input channels, variable noise levels between channels, and variable modes of spectral contrast. We demonstrate our architecture in the application of preclinical, photon-counting, micro-CT, effectively replacing 1-2 hours of iterative reconstruction, with <10 minutes of analytical reconstruction and CNN regularization. Experimental validation shows the effectiveness of our approach when applied to both in vivo photon-counting validation data (4 energy thresholds) and to simulated, dual-energy CT data virtually acquired with an energy integrating detector. In both cases, the results output by the CNN provide greater spectral accuracy than analytical reconstruction alone, but suffer from some degradation of spatial resolution. We conclude by proposing several extensions of our work to better preserve spatial resolution.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2549615, , , , 
+"
+  Learning better deep features for the prediction of occult invasive disease in ductal carcinoma in situ through transfer learning
+
+","    
+
+    Shi, B; Hou, R; Mazurowski, MA; Grimm, LJ; Ren, Y; Marks, JR; King, LM; Maley, CC; Hwang, ES; Lo, JY
+
+  ","    
+    January 1, 2018
+  ","    
+
+    10.1117/12.2293594
+
+  ","© 2018 SPIE. Purpose: To determine whether domain transfer learning can improve the performance of deep features extracted from digital mammograms using a pre-trained deep convolutional neural network (CNN) in the prediction of occult invasive disease for patients with ductal carcinoma in situ (DCIS) on core needle biopsy. Method: In this study, we collected digital mammography magnification views for 140 patients with DCIS at biopsy, 35 of which were subsequently upstaged to invasive cancer. We utilized a deep CNN model that was pre-trained on two natural image data sets (ImageNet and DTD) and one mammographic data set (INbreast) as the feature extractor, hypothesizing that these data sets are increasingly more similar to our target task and will lead to better representations of deep features to describe DCIS lesions. Through a statistical pooling strategy, three sets of deep features were extracted using the CNNs at different levels of convolutional layers from the lesion areas. A logistic regression classifier was then trained to predict which tumors contain occult invasive disease. The generalization performance was assessed and compared using repeated random sub-sampling validation and receiver operating characteristic (ROC) curve analysis. Result: The best performance of deep features was from CNN model pre-trained on INbreast, and the proposed classifier using this set of deep features was able to achieve a median classification performance of ROC-AUC equal to 0.75, which is significantly better (p<=0.05) than the performance of deep features extracted using ImageNet data set (ROCAUC = 0.68). Conclusion: Transfer learning is helpful for learning a better representation of deep features, and improves the prediction of occult invasive disease in DCIS.",Progress in Biomedical Optics and Imaging   Proceedings of Spie,http://dx.doi.org/10.1117/12.2293594, , , , 
+"
+  PowerNet: Transferable Dynamic IR Drop Estimation via Maximum Convolutional Neural Network
+
+",,"    
+    January 1, 2020
+  ","    
+
+    10.1109/ASP-DAC47756.2020.9045574
+
+  ","© 2020 IEEE. IR drop is a fundamental constraint required by almost all chip designs. However, its evaluation usually takes a long time that hinders mitigation techniques for fixing its violations. In this work, we develop a fast dynamic IR drop estimation technique, named PowerNet, based on a convolutional neural network (CNN). It can handle both vector-based and vectorless IR analyses. Moreover, the proposed CNN model is general and transferable to different designs. This is in contrast to most existing machine learning (ML) approaches, where a model is applicable only to a specific design. Experimental results show that PowerNet outperforms the latest ML method by 9% in accuracy for the challenging case of vectorless IR drop and achieves a 30× speedup compared to an accurate IR drop commercial tool. Further, a mitigation tool guided by PowerNet reduces IR drop hotspots by 26% and 31% on two industrial designs, respectively, with very limited modification on their power grids.","    
+
+    Proceedings of the Asia and South Pacific Design Automation Conference, Asp Dac
+
+  ",http://dx.doi.org/10.1109/ASP-DAC47756.2020.9045574, , , , 
+"
+  Incorporating side-channel information into convolutional neural networks for robotic tasks
+
+","    
+
+    Zhou, Y; Hauser, K
+
+  ","    
+    July 21, 2017
+  ","    
+
+    10.1109/ICRA.2017.7989251
+
+  ","© 2017 IEEE. Convolutional neural networks (CNN) are a deep learning technique that has achieved state-of-the-art prediction performance in computer vision and robotics, but assume the input data can be formatted as an image or video (e.g. predicting a robot grasping location given RGB-D image input). This paper considers the problem of augmenting a traditional CNN for handling image-like input (called main-channel input) with additional, highly predictive, non-image-like input (called side-channel input). An example of such a task would be to predict whether a robot path is collision-free given an occupancy grid of the environment and the path's start and goal configurations; the occupancy grid is the main-channel and the start and goal are the side-channel. This paper presents several candidate network architectures for doing so. Empirical tests on robot collision prediction and control problems compare the proposed architectures in terms of learning speed, memory usage, learning capacity, and susceptibility to overfitting.",Proceedings   Ieee International Conference on Robotics and Automation,http://dx.doi.org/10.1109/ICRA.2017.7989251, , , , 
+"
+  Object recognition in art drawings: Transfer of a neural network
+
+","    
+
+    Yin, R; Monson, E; Honig, E; Daubechies, I; Maggioni, M
+
+  ","    
+    May 18, 2016
+  ","    
+
+    10.1109/ICASSP.2016.7472087
+
+  ","© 2016 IEEE. We consider the problem of recognizing objects in collections of art works, in view of automatically labeling, searching and organizing databases of art works. To avoid manually labelling objects, we introduce a framework for transferring a convolutional neural network (CNN), trained on available large collections of labelled natural images, to the context of drawings. We retrain both the top and the bottom layer of the network, responsible for the high-level classiication output and the low-level features detection respectively, by transforming natural images into drawings. We apply this procedure to the drawings in the Jan Brueghel Wiki, and show the transferred CNN learns a discriminative metric on drawings and achieves good recognition accuracy. We also discuss why standard descriptor-based methods is problematic in the context of drawings.","2015 Ieee International Conference on Acoustics, Speech, and Signal Processing (Icassp)",http://dx.doi.org/10.1109/ICASSP.2016.7472087, , , , 
+"
+  Deep convolutional segmentation of remote sensing imagery: A simple and efficient alternative to stitching output labels
+
+","    
+
+    Huang, B; Collins, LM; Bradbury, K; Malof, JM
+
+  ","    
+    October 31, 2018
+  ","    
+
+    10.1109/IGARSS.2018.8518701
+
+  ","© 2018 IEEE In this work we consider the application of convolutional neural networks (CNNs) for the semantic segmentation of remote sensing imagery (e.g., aerial color or hyperspectral imagery). In segmentation the goal is to provide a dense pixel-wise labeling of the input imagery. However, remote sensing imagery is usually stored in the form of very large images, called “tiles”, which are too large to be segmented directly using most CNNs and their associated hardware. During label inference (i.e., obtaining labels for a new large tile) smaller sub-images, called “patches”, are extracted uniformly over a tile and the resulting label maps are “stitched” (or concatenated) to create a tile-sized label map. This approach suffers from computational inefficiency and risks of discontinuities at the boundaries between the output of individual patches. In this work we propose a simple alternative approach in which the input size of the CNN is dramatically increased only during label inference. We evaluate the performance of the proposed approach against a standard stitching approach using two popular segmentation CNN models on the INRIA building labeling dataset. The results suggest that the proposed approach substantially reduces label inference time, while also yielding modest overall label accuracy increases. This approach also contributed to our winning entry (overall performance) in the INRIA building labeling competition.","    
+
+    International Geoscience and Remote Sensing Symposium (Igarss)
+
+  ",http://dx.doi.org/10.1109/IGARSS.2018.8518701, , , , 
+"
+  A deep convolutional neural network, with pre-training, for solar photovoltaic array detection in aerial imagery
+
+","    
+
+    Malof, JM; Collins, LM; Bradbury, K
+
+  ","    
+    December 1, 2017
+  ","    
+
+    10.1109/IGARSS.2017.8127092
+
+  ","© 2017 IEEE. In this work we consider the problem of developing algorithms that automatically identify small-scale solar photovoltaic arrays in high resolution aerial imagery. Such algorithms potentially offer a faster and cheaper solution to collecting small-scale photovoltaic (PV) information, such as their location, capacity, and the energy they produce. Here we build on previous algorithmic work by employing convolutional neural networks (CNNs), which have recently yielded major improvements in other image object recognition problems. We propose a CNN architecture for our recognition problem and then measure its detection performance on the same (publicly available) dataset that was used in previous publications. The results indicate that the CNN yields substantial performance improvements over previous results. We also investigate the recently popular approach of pre-training for CNNs.","    
+
+    International Geoscience and Remote Sensing Symposium (Igarss)
+
+  ",http://dx.doi.org/10.1109/IGARSS.2017.8127092, , , , 
+"
+  Automatic feature learning for glaucoma detection based on deep learning
+
+","    
+
+    Chen, X; Xu, Y; Yan, S; Wong, DWK; Wong, TY; Liu, J
+
+  ","    
+    January 1, 2015
+  ","    
+
+    10.1007/978-3-319-24574-4_80
+
+  ","© Springer International Publishing Switzerland 2015. Glaucoma is a chronic and irreversible eye disease in which the optic nerve is progressively damaged, leading to deterioration in vision and quality of life. In this paper, we present an Automatic feature Learning for glAucomaDetection based onDeep LearnINg (ALADDIN),with deep convolutional neural network (CNN) for feature learning. Different from the traditional convolutional layer that uses linear filters followed by a nonlinear activation function to scan the input, the adopted network embeds micro neural networks (multilayer perceptron) with more complex structures to abstract the data within the receptive field. Moreover, a contextualizing deep learning structure is proposed in order to obtain a hierarchical representation of fundus images to discriminate between glaucoma and non-glaucoma pattern,where the network takes the outputs fromother CNN as the context information to boost the performance. Extensive experiments are performed on the ORIGA and SCES datasets. The results showarea under curve (AUC) of the receiver operating characteristic curve in glaucoma detection at 0.838 and 0.898 in the two databases,much better than state-of-the-art algorithms. The method could be used for glaucoma diagnosis.",Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics),http://dx.doi.org/10.1007/978-3-319-24574-4_80, , , , 
+"
+  Sleep-wake classification via quantifying heart rate variability by convolutional neural network.
+
+","    
+
+    Malik, J; Lo, Y-L; Wu, H-T
+
+  ","    
+    August 20, 2018
+  ","    
+
+    10.1088/1361-6579/aad5a9
+
+  ","OBJECTIVE:Fluctuations in heart rate are intimately related to changes in the physiological state of the organism. We exploit this relationship by classifying a human participant's wake/sleep status using his instantaneous heart rate (IHR) series. APPROACH:We use a convolutional neural network (CNN) to build features from the IHR series extracted from a whole-night electrocardiogram (ECG) and predict every 30 s whether the participant is awake or asleep. Our training database consists of 56 normal participants, and we consider three different databases for validation; one is private, and two are public with different races and apnea severities. MAIN RESULTS:On our private database of 27 participants, our accuracy, sensitivity, specificity, and [Formula: see text] values for predicting the wake stage are [Formula: see text], 52.4%, 89.4%, and 0.83, respectively. Validation performance is similar on our two public databases. When we use the photoplethysmography instead of the ECG to obtain the IHR series, the performance is also comparable. A robustness check is carried out to confirm the obtained performance statistics. SIGNIFICANCE:This result advocates for an effective and scalable method for recognizing changes in physiological state using non-invasive heart rate monitoring. The CNN model adaptively quantifies IHR fluctuation as well as its location in time and is suitable for differentiating between the wake and sleep stages.",Physiological Measurement,http://dx.doi.org/10.1088/1361-6579/aad5a9,7,50,12,None
