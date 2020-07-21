@@ -146,8 +146,13 @@ class AtdukeSpider(scrapy.Spider):
                     'link': paper.xpath(".//h3[contains(text(), 'Full Text')]/following-sibling::ul[1]/li[1]/a/@href").get(),
                     'citations': citations,
                     'readership': readership,
+<<<<<<< HEAD
                     'tweets': tweets,
                     'news_mentions': news_mentions
+=======
+                    'tweets': (tweets),
+                    'news_mentions': (news_mentions)
+>>>>>>> 6489934683faee0517c743bc1b5940240b3c9c02
                 }
                 
                 # close the new tab we created and switch to the main tab that has the set of articles.
