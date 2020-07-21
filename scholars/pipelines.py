@@ -21,6 +21,7 @@ class SQLlitePipeline(object):
             citations TEXT,
             readership TEXT,
             tweets TEXT
+            link TEXT
         )
       ''')
                   # citations BLOB,
@@ -44,8 +45,9 @@ class SQLlitePipeline(object):
     print(type(item.get('citations')))
     print(type(item.get('readership')))
     print(type(item.get('tweets')))
+    print(type(item.get('link')))
     self.c.execute('''
-    INSERT INTO paper (title, authors, published_date, publication_location, citations, readership, tweets) VALUES(?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO paper (title, authors, published_date, publication_location, citations, readership, tweets, link) VALUES(?, ?, ?, ?, ?, ?, ?, ?)
     ''', (
       item.get('title'),
       item.get('authors'),
@@ -53,7 +55,8 @@ class SQLlitePipeline(object):
       item.get('publication_location'),
       item.get('citations'),
       item.get('readership'),
-      item.get('tweets')
+      item.get('tweets'),
+      item.get('link')
     ))
     self.connection.commit()
     logging.warning("SPIDER PROCESSED")
